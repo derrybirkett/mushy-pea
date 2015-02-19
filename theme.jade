@@ -1,0 +1,10 @@
+doctype html
+html(lang="en")
+  head
+    title Mushy Pea
+    
+  body
+    h2 {{ post.title }}
+    p {{ post.created_at|format_date }}
+    .content
+      {{ post.content }}
